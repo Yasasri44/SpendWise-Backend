@@ -20,5 +20,6 @@ public class Expense {
     private String description;
 
     private LocalDate date;
+    private String email;
 
 }

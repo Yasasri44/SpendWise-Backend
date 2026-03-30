@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: spendwise-backend
+    runtime: java
+    buildCommand: "./mvnw clean install"
+    startCommand: "java -jar target/*.jar"
+    envVars:
+      - key: SPRING_DATA_MONGODB_URI
+        value: mongodb+srv://spendwise:spendwise123@cluster0.aem7oyz.mongodb.net/spendwise
